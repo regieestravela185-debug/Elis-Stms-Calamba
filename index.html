@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STMS | Smart Tenant Management System for Elis Business Center</title>
+  <meta name="description" content="Capstone showcase of STMS, a Smart Tenant Management System with analytics and hash-chained payment logging for Elis Business Center, Calamba, Laguna. Laguna State Polytechnic University, College of Computer Studies, November 2026.">
+  <meta property="og:title" content="STMS for Elis Business Center">
+  <meta property="og:description" content="Research showcase of the Smart Tenant Management System developed for Elis Business Center, Calamba, Laguna.">
+  <meta property="og:image" content="assets/img/home-listing.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a140e'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='28' fill='%23e8c98a' font-family='Georgia'%3EE%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Outfit:wght@400;560;650;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#overview">Skip to content</a>
+  <header class="nav">
+    <a class="brand" href="#top">
+      <span class="mark">E</span>
+      <span><strong>STMS</strong><span>Elis Business Center</span></span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Page">
+      <a href="#overview">Overview</a>
+      <a href="#problem">Problem</a>
+      <a href="#objectives">Objectives</a>
+      <a href="#method">Method</a>
+      <a href="#system">System</a>
+      <a href="#results">Results</a>
+      <a href="#team">Team</a>
+      <a class="nav-cta" href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="kicker reveal">Laguna State Polytechnic University · College of Computer Studies · November 2026</p>
+        <h1 class="reveal d1">A smart tenant system for Elis Business Center.</h1>
+        <p class="lede reveal d2">STMS is a web platform that brings tenant records, reservations, contracts, payments, concerns, and occupancy into one place for a property in Calamba, Laguna with eighty-four studio and commercial units.</p>
+        <div class="actions reveal d3">
+          <a class="btn btn-dark" href="https://elis-stms.onrender.com/" target="_blank" rel="noopener noreferrer">Open the live system</a>
+          <a class="btn btn-ghost" href="#system">View the screens</a>
+        </div>
+      </div>
+      <aside class="hero-card reveal d2">
+        <p class="kicker">What the study established</p>
+        <p>The system was designed, built, tested, and evaluated with the administrator and tenants of Elis Business Center.</p>
+        <ol>
+          <li>All <em>eleven</em> specified features were built and performed their stated function.</li>
+          <li>Black-box testing by ten IT practitioners passed <em>110 of 110</em> test cases.</li>
+          <li>Eighty-nine tenants rated the system <em>4.92</em>, Excellent and Highly Acceptable.</li>
+        </ol>
+      </aside>
+    </section>
+
+    <div class="stats" aria-label="Study figures">
+      <article class="stat observe"><b data-count="84">0</b><span>studio and commercial units across five buildings</span></article>
+      <article class="stat observe"><b data-count="11">0</b><span>modules specified, built, and verified</span></article>
+      <article class="stat observe"><b data-count="100" data-suffix="%">0</b><span>black-box pass rate, 280 of 280 steps</span></article>
+      <article class="stat observe"><b data-count="4.92" data-decimals="2">0</b><span>overall tenant weighted mean</span></article>
+    </div>
+
+    <section id="overview">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Project overview</p>
+          <h2>From paper records to one tenant platform.</h2>
+          <p>Elis Business Center in Calamba, Laguna was managing tenant records, reservations, and payments with paper documents, spreadsheets, and direct messages. STMS was built so the administrator and the tenants could work from the same record.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card observe">
+            <h3>Who it serves</h3>
+            <p>A prospective tenant can browse units and file a reservation. A registered tenant can see the contract, the monthly bill and its history, announcements, and a way to raise a concern. The administrator manages units, approves reservations, records payments and utility bills, answers concerns, and reads the analytics. A background scheduler sends reminders.</p>
+          </article>
+          <article class="card observe">
+            <h3>What it is for</h3>
+            <p>The purpose is to modernize tenant operations through a centralized web platform. It supports United Nations Sustainable Development Goal 9, Industry, Innovation and Infrastructure, and Goal 11, Sustainable Cities and Communities, by bringing digital recordkeeping into a small urban property business. It does not remove every operational difficulty at the property. Its usefulness depends on consistent use.</p>
+          </article>
+          <article class="card observe">
+            <h3>Scope</h3>
+            <p>The study covers Elis Business Center only: the administrator, registered tenants, and prospective tenants using the public reservation feature. At the time of the study the property had 84 units and 113 tenants. The system records payments. Rent, deposits, and bills are still settled at the office or by bank transfer.</p>
+          </article>
+          <article class="card observe">
+            <h3>Degree</h3>
+            <p>A capstone project in partial fulfillment of the Bachelor of Science in Information Technology, major in Web and Mobile Application Development, College of Computer Studies, Laguna State Polytechnic University, Santa Cruz, Laguna.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem" class="band">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Statement of the problem</p>
+          <h2>Records existed. They were scattered.</h2>
+          <p>The manual arrangement worked, but updates lagged, payment monitoring was difficult, and tenants had limited access to their own information. There was no formal record of concerns, payment records had no reliable audit trail, and the administrator had no visual view of occupancy.</p>
+        </div>
+        <div class="gaps">
+          <article class="gap observe"><span>01</span><p>Tenant records, contracts, and reservations were split across paper, spreadsheets, and messages.</p></article>
+          <article class="gap observe"><span>02</span><p>Payment status was hard to monitor, and a changed record would not announce itself.</p></article>
+          <article class="gap observe"><span>03</span><p>Tenants depended on the office for contracts, bills, and announcements.</p></article>
+          <article class="gap observe"><span>04</span><p>Concerns and disputes had no consistent written trail.</p></article>
+          <article class="gap observe"><span>05</span><p>Occupancy could not be read at a glance across five buildings.</p></article>
+          <article class="gap observe"><span>06</span><p>Prospective tenants had no shared view of which units were still available.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="objectives">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Research objectives</p>
+          <h2>Design it, prove it, then ask the tenants.</h2>
+          <p>The study aimed to design, develop, test, and evaluate a Smart Tenant Management System with analytics and blockchain security for Elis Business Center.</p>
+        </div>
+        <div class="obj">
+          <details class="observe" open>
+            <summary>1. Design and develop eleven features</summary>
+            <ul>
+              <li>Tenant registration and profile management</li>
+              <li>Tenant portal and contract management</li>
+              <li>Reservation and unit availability management</li>
+              <li>Payment tracking and transaction recording</li>
+              <li>Blockchain secure transaction logging</li>
+              <li>Announcement and notification management</li>
+              <li>Concern and dispute management</li>
+              <li>Interactive floor plan visualization</li>
+              <li>Analytics dashboard for occupancy and payment monitoring</li>
+              <li>Mobile-responsive web access</li>
+              <li>Optical character recognition for tenant document data</li>
+            </ul>
+          </details>
+          <details class="observe">
+            <summary>2. Verify the system by black-box testing</summary>
+            <ul>
+              <li>Records, reservations, and payments are stored and retrieved as specified.</li>
+              <li>An altered payment is detected by the hash-chained ledger.</li>
+              <li>Announcements, notifications, and concerns are delivered and recorded.</li>
+              <li>The floor plan and analytics dashboard follow the current records.</li>
+              <li>The system operates in desktop and mobile browsers.</li>
+              <li>OCR reads a legible identification document and refuses an unreadable one.</li>
+            </ul>
+          </details>
+          <details class="observe">
+            <summary>3. Evaluate acceptability with the intended users</summary>
+            <ul>
+              <li>Quality factors, adapted from ISO/IEC 25010</li>
+              <li>Perceived ease of use</li>
+              <li>Attitude toward using</li>
+              <li>Behavioral intention to use</li>
+              <li>User experience</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="band">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Methodology</p>
+          <h2>Developmental research, built in Agile cycles.</h2>
+          <p>Requirements came from interviews with the property manager, direct observation of the manual process, and a review of published work. The Agile model then carried planning, analysis, design, iterative construction, integration and testing, and deployment.</p>
+        </div>
+        <div class="steps">
+          <article class="card step observe"><i>01</i><h3>Fact-finding</h3><p>Semi-structured interviews, observation of the paper workflow, and library research set the operational gaps.</p></article>
+          <article class="card step observe"><i>02</i><h3>Build</h3><p>Each feature was built in Flask and checked against the requirement that called for it before the next one started.</p></article>
+          <article class="card step observe"><i>03</i><h3>Test</h3><p>Ten IT practitioners ran eleven black-box cases. Testers were selected for an IT or IS degree and development experience.</p></article>
+          <article class="card step observe"><i>04</i><h3>Sample</h3><p>The administrator was included by total enumeration. From 113 tenants, Slovin’s formula at a 5 percent margin gave 89 respondents.</p></article>
+          <article class="card step observe"><i>05</i><h3>Evaluate</h3><p>After a supervised demonstration, tenants used the portal and answered 15 Likert items, three for each of five criteria, then a short interview.</p></article>
+          <article class="card step observe"><i>06</i><h3>Analyze</h3><p>Frequency, percentage, weighted mean, and standard deviation. No inferential tests were used, because the objective was to describe acceptability.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Architecture and technologies</p>
+          <h2>Browser, application, and one database.</h2>
+          <p>The client is a browser on desktop, tablet, or phone. The application layer holds authentication, tenant and unit modules, payments with ledger hashing, concerns, announcements, analytics, OCR, a scheduler, and Socket.IO. PostgreSQL stores the records. Mail and optional Google sign-in are external services. No installation is required on the user’s device.</p>
+        </div>
+        <div class="table-wrap observe">
+          <table class="tech">
+            <thead><tr><th>Component</th><th>Technology</th><th>Role in the system</th></tr></thead>
+            <tbody>
+              <tr><td>Backend</td><td>Python 3.11, Flask 3.0</td><td>Server logic, routing, and blueprints</td></tr>
+              <tr><td>Data</td><td>PostgreSQL on Supabase, Flask-SQLAlchemy</td><td>Tenant, unit, contract, reservation, and payment records</td></tr>
+              <tr><td>Files</td><td>Supabase Storage</td><td>Identification documents and unit images</td></tr>
+              <tr><td>Access</td><td>Flask-Login, Authlib, Flask-Limiter</td><td>Sessions, optional Google sign-in, and login rate limiting</td></tr>
+              <tr><td>Live updates</td><td>Flask-SocketIO</td><td>Unit status and notifications without a page reload</td></tr>
+              <tr><td>Documents</td><td>OpenCV, pytesseract</td><td>Text extraction from uploaded identification images</td></tr>
+              <tr><td>Assistant</td><td>NLTK, RapidFuzz</td><td>Rule-based replies to a defined set of tenant questions</td></tr>
+              <tr><td>Analytics</td><td>NumPy, Pandas</td><td>Occupancy, revenue, and reporting computations</td></tr>
+              <tr><td>Reminders</td><td>APScheduler, Brevo</td><td>Renewal and billing reminders by email</td></tr>
+              <tr><td>Interface</td><td>Jinja2, JavaScript, PWA manifest</td><td>Server-rendered pages that adapt to a phone</td></tr>
+              <tr><td>Hosting</td><td>Gunicorn on Render</td><td>Cloud deployment reached through a browser</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grid-2" style="margin-top:16px">
+          <article class="card observe">
+            <h3>Ledger, not a public chain</h3>
+            <p>Each confirmed payment writes a ledger entry that carries the hash of the entry before it. A later change to a stored amount breaks the chain and is reported. The ledger stays inside the system database. It is not a decentralized network and does not use distributed consensus.</p>
+          </article>
+          <article class="card observe">
+            <h3>Twelve principal tables</h3>
+            <p>The tenant profile is the hub. Payments, utility bills, concerns, and renewal requests reference it. The payment ledger is kept apart from the payment table on purpose, so a changed amount can be detected. Identity images are stored separately from the row they verify.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="band">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">System features</p>
+          <h2>Screens from the deployed system.</h2>
+          <p>Select a screen. Choose the image to enlarge it. Amounts and statuses on these screens are records in the live system at the time of capture. They are not the evaluation scores in Chapter IV.</p>
+        </div>
+        <div class="gallery-layout observe">
+          <div class="shot-list" role="tablist" aria-label="System screens">
+            <button type="button" role="tab" data-index="0" class="active" aria-selected="true">Public listing</button>
+            <button type="button" role="tab" data-index="1" aria-selected="false">Tenant dashboard</button>
+            <button type="button" role="tab" data-index="2" aria-selected="false">Tenant payments</button>
+            <button type="button" role="tab" data-index="3" aria-selected="false">Admin dashboard</button>
+            <button type="button" role="tab" data-index="4" aria-selected="false">Payment ledger</button>
+            <button type="button" role="tab" data-index="5" aria-selected="false">Floor plan</button>
+          </div>
+          <figure class="frame">
+            <div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img id="shot-image" src="assets/img/home-listing.jpg" alt="Public homepage and unit listing">
+            <figcaption class="caption" id="shot-caption">Prospective tenants browse Elis Business Center and its residential buildings from the public site, then register or sign in. This is the deployed homepage.</figcaption>
+          </figure>
+        </div>
+        <div class="features">
+          <article class="observe"><h3>Registration</h3><p>An account is created only after the one-time password is confirmed. Profile edits and photo changes save, and a wrong password is refused.</p></article>
+          <article class="observe"><h3>Contracts</h3><p>The portal shows the contract period and progress. A renewal request is recorded and extends the contract once the administrator approves it.</p></article>
+          <article class="observe"><h3>Reservations</h3><p>A request is stored as pending and the unit is held. Approval marks the unit occupied and removes it from the public listing. Units are not assigned automatically.</p></article>
+          <article class="observe"><h3>Payments</h3><p>The administrator records payments, and tenants can submit proof. A proof stays awaiting review until it is verified. The system does not collect the money itself.</p></article>
+          <article class="observe"><h3>Concerns and notices</h3><p>Tenants file a concern with a category and priority. Announcements reach the intended audience, and the notification bell updates without a reload.</p></article>
+          <article class="observe"><h3>OCR</h3><p>A legible identification image yields the document type and number for review. An unreadable image is refused. Extracted values are not written until a person has seen them.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="results">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Results and evaluation</p>
+          <h2>Every specified test passed. Tenants rated it highly acceptable.</h2>
+          <p>Ten practitioners each ran 11 cases and 28 steps. All 280 step-level observations matched the expected result. Negative cases also held: a wrong password was refused, an altered payment amount was reported, and an unreadable identification image was declined.</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:18px">
+          <article class="card observe">
+            <h3>Black-box summary</h3>
+            <p>10 system testers, 11 test cases, 110 of 110 case results passed. The result shows correct output for the inputs in the instrument. It does not measure load, unanticipated input, or resistance to attack. No load test and no penetration test were conducted.</p>
+          </article>
+          <article class="card observe">
+            <h3>Who answered</h3>
+            <p>Eighty-nine tenants from residential and commercial units answered all 15 statements in person after using the portal. Of 1,335 responses, 1,260 were Strongly Agree (94.4 percent), 43 were Agree (3.2 percent), and 32 were Neutral (2.4 percent). None were Disagree or Strongly Disagree. The administrator’s acceptance is recorded separately in the certificate of acceptance, not pooled into these means.</p>
+          </article>
+        </div>
+        <div class="table-wrap observe">
+          <table class="eval">
+            <thead>
+              <tr><th>Criterion</th><th>Weighted mean</th><th>Verbal interpretation</th><th>Acceptability</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Quality factors</td><td>4.93</td><td>Excellent</td><td>Highly Acceptable</td></tr>
+              <tr><td>Perceived ease of use</td><td>4.93</td><td>Excellent</td><td>Highly Acceptable</td></tr>
+              <tr><td>Attitude toward using</td><td>4.89</td><td>Excellent</td><td>Highly Acceptable</td></tr>
+              <tr><td>Behavioral intention to use</td><td>4.93</td><td>Excellent</td><td>Highly Acceptable</td></tr>
+              <tr><td>Experience</td><td>4.92</td><td>Excellent</td><td>Highly Acceptable</td></tr>
+              <tr class="total"><td>Overall</td><td>4.92</td><td>Excellent</td><td>Highly Acceptable</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="observe" style="color:var(--ink-soft); margin-top:14px">The scale treats 4.21 to 5.00 as Excellent and Highly Acceptable. The five means sit within four hundredths of a point. The highest item means, 4.94, were on the security of personal information, finding information in the portal, reliability for continued use, and preference for the online features over the manual way. Ratings were gathered in person at one property and should be read as acceptance by these users, not as a general result.</p>
+      </div>
+    </section>
+
+    <section id="conclusion" class="band">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Conclusions and recommendations</p>
+          <h2>The records are in one place, and a changed payment can be seen.</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card observe">
+            <h3>Conclusions</h3>
+            <p>The eleven features perform their intended functions. People who did not build the system could operate it as specified, within the limits of black-box testing. Chaining each confirmed payment to the one before it makes an alteration detectable. Tenants can read the contract, the bill, and the history without asking, and the administrator can read occupancy and outstanding accounts without assembling them by hand. OCR assists that review and does not replace the administrator’s judgment. The intended users accepted the system on every criterion.</p>
+          </article>
+          <article class="card observe">
+            <h3>Recommendations</h3>
+            <p>Keep the unit inventory and utility readings current in the system, and give incoming tenants a short orientation. Before a much larger number of tenants use it, run performance and load testing. A payment gateway, signed links for identity documents, and a written retention period for those documents are recommended next. Extending the ledger to a distributed arrangement, measuring OCR accuracy across Philippine identification types, computing Cronbach’s alpha from item-level responses, and a penetration test are left for future work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Research team</p>
+          <h2>College of Computer Studies</h2>
+          <p>Laguna State Polytechnic University, Santa Cruz, Laguna. Submitted November 2026, with thanks to the administrator and tenants of Elis Business Center.</p>
+        </div>
+        <div class="team">
+          <article class="person observe"><div class="avatar">RE</div><h3>Regie M. Estravela</h3><p>Researcher</p></article>
+          <article class="person observe"><div class="avatar">IC</div><h3>Ivan Harly B. Cruzat</h3><p>Researcher</p></article>
+          <article class="person observe"><div class="avatar">PS</div><h3>Prince Wency P. Sumaya</h3><p>Researcher</p></article>
+          <article class="person observe"><div class="avatar">RJ</div><h3>Reynalen C. Justo, LPT, DIT</h3><p>Thesis adviser, College of Computer Studies</p></article>
+          <article class="person observe"><div class="avatar">MV</div><h3>Mia V. Villarica, DIT</h3><p>Associate Dean, College of Computer Studies</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="wrap">
+        <div class="section-head observe">
+          <p class="kicker">Project resources</p>
+          <h2>Open the system, the code, the walkthrough, or the manuscript.</h2>
+        </div>
+        <div class="resources">
+          <a class="resource observe" href="https://elis-stms.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <small>Live system</small>
+            <h3>elis-stms.onrender.com</h3>
+            <p>The deployed Smart Tenant Management System. The host may take a moment to wake.</p>
+          </a>
+          <a class="resource observe" href="https://github.com/regieestravela185-debug/elis-stms" target="_blank" rel="noopener noreferrer">
+            <small>Source code</small>
+            <h3>System repository</h3>
+            <p>The application repository for STMS.</p>
+          </a>
+          <a class="resource observe" href="https://drive.google.com/drive/folders/1f9yrS7e67SCrxQsQ_cGiPSycuPD4rv6I?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <small>Walkthrough</small>
+            <h3>Demonstration video</h3>
+            <p>A Google Drive folder with the system walkthrough.</p>
+          </a>
+          <a class="resource observe" href="https://drive.google.com/file/d/1LHXth6zM_yJPNQq-Q158ysj_jtoxaQSA/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <small>Manuscript</small>
+            <h3>Full capstone manuscript</h3>
+            <p>The thesis document used as the source for this page.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>STMS: A Smart Tenant Management System with Analytics and Blockchain for Elis Business Center. Capstone project, College of Computer Studies, Laguna State Polytechnic University. Figures on this page are taken from the November 2026 manuscript.</p>
+      <p><a href="https://github.com/regieestravela185-debug/Elis-Stms-Calamba">Showcase repository</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged screenshot">
+    <button type="button" aria-label="Close">×</button>
+    <img id="lightbox-image" alt="">
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
